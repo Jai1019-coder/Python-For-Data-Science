@@ -1,0 +1,17 @@
+[
+    {
+        "EmpID": "1001",
+        "Name": "Ravi Sharma",
+        "Salary": "50000"
+    },
+    {
+        "EmpID": "1002",
+        "Name": "Mahi Gautam",
+        "Salary": "70000"
+    },
+    {
+        "EmpID": "1003",
+        "Name": "Tanu Singh",
+        "Salary": "65000"
+    }
+]
