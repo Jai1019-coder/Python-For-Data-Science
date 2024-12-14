@@ -62,7 +62,41 @@ def submit():
     else:
         return render_template('getresult.html')
     return redirect(url_for('successresult',score=total_score))
+
+
+    ''' +----------------------+
+        | User accesses /submit|
+        +----------------------+
+                |
+                v
+    +--------------------------+
+    | Is request method POST?  |
+    +--------------------------+
+        /             \
+        YES           NO
+        |              |
+        v              v
++----------------+  +---------------------------+
+| Retrieve form  |  | Render getresult.html     |
+| data: science, |  | (for GET request)         |
+| maths, c, data |  +---------------------------+
++----------------+
+        |
+        v
++------------------------------+
+| Calculate total_score:       |
+| (science + maths + c +       |
+|  data_science) / 4           |
++------------------------------+
+        |
+        v
++------------------------------------+
+| Redirect to successresult/<score> |
++------------------------------------+
+'''
     
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
