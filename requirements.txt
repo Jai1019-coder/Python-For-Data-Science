@@ -2,6 +2,8 @@ ipykernel
 numpy
 pandas
 seaborn
-sklearn
+scikit-learn
 matplotlib
 flask
+memory_profiler
+streamlit
